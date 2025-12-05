@@ -120,17 +120,4 @@ or with curl:
 curl "http://your-eb-url/predict?size=1200"
 ```
 
-**Next steps / Improvements**
 
-- Add a small training pipeline and artifacts versioning instead of committing `model.pkl`.
-- Add input validation for `/predict` and better error handling.
-- Add a CI step to build and validate the package before deploying to EB.
-
-If you want, I can:
-- generate a `.gitignore` that excludes sensitive files,
-- add a small deploy script that trains the model during the build phase,
-- or create an `.ebextensions` config to run `python model.py` on instance startup.
-
----
-
-Happy to tweak this README to include any extra details you want (CI, environment config, or automated model training on deploy).
